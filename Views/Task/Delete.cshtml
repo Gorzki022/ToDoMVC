@@ -1,11 +1,12 @@
 ﻿@model Todo.Models.TaskModel
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Delete";
 }
 
-<h1 class="display-4">Task Details</h1>
+<h1 class="display-4">Delete task</h1>
 
+<h3>Are you sure you want to delete this task?</h3>
 <div>
     <hr />
     <dl class="row">
@@ -22,8 +23,9 @@
             @Html.DisplayFor(model => model.TaskDesc)
         </dd>
     </dl>
-</div>
-<div>
-    @Html.ActionLink("Edit", "Edit", new {  id = Model.TaskId  }, new { @class = "btn btn-success" })
-    <a class="btn btn-dark" asp-action="Index">Back to tasks</a>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a class="btn btn-dark" asp-action="Index">Back to tasks</a>
+    </form>
 </div>

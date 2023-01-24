@@ -4,7 +4,7 @@
     ViewData["Title"] = "Edit";
 }
 
-<h1>Edit task</h1>
+<h1 class="display-4">Edit task</h1>
 
 <hr />
 <div class="row">
@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="TaskDesc" class="control-label"></label>
-                <input asp-for="TaskDesc" class="form-control" />
+                <textarea asp-for="TaskDesc" class="form-control"></textarea>
                 <span asp-validation-for="TaskDesc" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -29,7 +29,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to tasks</a>
+    <a class="btn btn-dark" asp-action="Index">Back to tasks</a>
 </div>
 
 @section Scripts {
