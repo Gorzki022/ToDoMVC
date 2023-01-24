@@ -1,0 +1,9 @@
+Kompozyt: Pozwala na traktowanie pojedynczych obiektów i ich zestawów jednakowo. Może być on stosowany w przypadku, gdy chcemy zbudować drzewiastą strukturę obiektów, np. w przypadku menu aplikacji.
+
+Obserwator: Pozwala na rejestrowanie i powiadamianie obiektów zainteresowanych zmianami w innym obiekcie. Przykładem jego zastosowania może być aplikacja, w której wiele widoków jest powiadamianych o zmianie stanu modelu danych.
+
+Strategia: Pozwala na dynamiczne zmienianie algorytmu używanego przez obiekt. Przykładem jego zastosowania może być aplikacja, w której różne strategie sortowania danych są używane w zależności od potrzeb.
+
+Metoda Wytwórcza: Pozwala na abstrakcyjne tworzenie obiektów, ukrywając logikę tworzenia przed klientem. Przykładem jego zastosowania może być aplikacja, w której różne implementacje obiektów są tworzone w zależności od potrzeb.
+
+Dekorator: Pozwala na dynamiczne dodawanie nowych funkcjonalności do obiektu bez zmieniania jego kodu źródłowego. Przykładem jego zastosowania może być aplikacja, w której różne rozszerzenia funkcjonalności są dodawane do obiektu na potrzeby różnych użytkowników.
